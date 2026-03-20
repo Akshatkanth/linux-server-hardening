@@ -5,4 +5,8 @@ Step 4: Configured SSH key authentication
 - Generated ed25519 key pair  
 - Added public key to server  
 - Disabled password authentication  
-- Disabled root login  
+- Disabled root login
+Step 5: Configured UFW firewall  
+- Allowed SSH (port 22)  
+- Enabled firewall  
+- Verified active status  
