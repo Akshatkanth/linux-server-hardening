@@ -6,6 +6,7 @@ Step 4: Configured SSH key authentication
 - Added public key to server  
 - Disabled password authentication  
 - Disabled root login
+  
 Step 5: Configured UFW firewall  
 - Allowed SSH (port 22)  
 - Enabled firewall  
