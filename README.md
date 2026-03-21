@@ -20,3 +20,8 @@ Step 6: Configured Fail2Ban
 - Created jail.local
 - Enabled SSH protection
 - Configured max retries and ban time
+   
+Step 7: Enabled automatic security updates
+- Installed unattended-upgrades
+- Enabled automatic security patching
+- Verified service is running
