@@ -1,6 +1,9 @@
 Step 1: Created Ubuntu 22.04 VM ✅  
+
 Step 2: Updated system packages  
-Step 3: Created non-root sudo user (devadmin) 
+
+Step 3: Created non-root sudo user (devadmin)  
+
 Step 4: Configured SSH key authentication  
 - Generated ed25519 key pair  
 - Added public key to server  
@@ -10,4 +13,10 @@ Step 4: Configured SSH key authentication
 Step 5: Configured UFW firewall  
 - Allowed SSH (port 22)  
 - Enabled firewall  
-- Verified active status  
+- Verified active status
+  
+Step 6: Configured Fail2Ban
+- Installed fail2ban
+- Created jail.local
+- Enabled SSH protection
+- Configured max retries and ban time
