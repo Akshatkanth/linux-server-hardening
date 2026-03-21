@@ -25,3 +25,12 @@ Step 7: Enabled automatic security updates
 - Installed unattended-upgrades
 - Enabled automatic security patching
 - Verified service is running
+
+Step 8: Server configuration
+- Set timezone to Asia/Kolkata
+- Updated hostname to prod-server
+
+Step 9: Service and log management
+- Used systemctl to manage services
+- Used journalctl to view logs
+- Explored /var/log directory
