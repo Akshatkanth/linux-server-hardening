@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Create user
+ sudo adduser devadmin
+#
+# # Give sudo privileges
+ sudo usermod -aG sudo devadmin
