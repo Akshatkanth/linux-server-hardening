@@ -9,4 +9,5 @@ Configured a production-ready Ubuntu server on Google Cloud with:
 - Proper timezone and hostname
 - Service and log management
 
-Verified all configurations using a security checklist.
+Verified all configurations using a security checklist.  
+https://roadmap.sh/projects/linux-server-setup
