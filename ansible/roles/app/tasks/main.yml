@@ -1,6 +1,6 @@
 - name: Copy app tar file to server
   copy:
-    src: ../../app.tar.gz
+    src: app.tar.gz
     dest: /tmp/app.tar.gz
 
 - name: Extract app
