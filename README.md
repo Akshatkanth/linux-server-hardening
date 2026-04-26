@@ -1,117 +1,77 @@
-# 🚀 Linux Server Hardening & Deployment (Ansible)
+# Linux Server Hardening & Deployment
 
-## 📌 Overview
+## Overview
 
-This project demonstrates how to provision, secure, and automate the configuration of a production-ready Ubuntu server on Google Cloud using Ansible.
-
-It covers end-to-end server setup, security hardening, and deployment of a static web application using infrastructure-as-code principles.
+Configured and secured an Ubuntu server on Google Cloud and automated setup using Ansible. Deployed a static website using Nginx and Docker.
 
 ---
 
-## 🧱 Architecture
+## Features
 
-Local Machine (WSL)
-→ Ansible (Control Node)
-→ SSH
-→ Google Cloud Ubuntu Server (Managed Node)
+### Server Setup & Security
 
----
-
-## 🔐 Features
-
-### 🛡️ Server Hardening
-
-* Created non-root sudo user
-* Disabled password-based SSH authentication
-* Disabled root login over SSH
-* Configured UFW firewall (SSH + HTTP)
-* Installed and configured Fail2Ban
-* Enabled automatic security updates
-* Set timezone and hostname
+* Non-root sudo user
+* SSH key authentication (password login disabled)
+* UFW firewall (SSH, HTTP)
+* Fail2Ban for brute-force protection
+* Automatic security updates
+* Timezone and hostname configuration
 
 ---
 
-### ⚙️ Automation (Ansible)
+### Automation (Ansible)
 
-* Automated full server setup using Ansible playbooks
-* Used structured roles:
+* Automated server setup using playbooks
+* Role-based structure:
 
-  * `base` → system setup & packages
-  * `ssh` → SSH key management
-  * `nginx` → web server setup
-  * `app` → application deployment
-* Implemented idempotent configuration
-
----
-
-### 🌐 Deployment
-
-* Installed and configured Nginx
-* Deployed a static HTML/CSS website
-* Served application on public IP
+  * `base` → system setup
+  * `ssh` → key configuration
+  * `nginx` → web server
+  * `app` → deployment
 
 ---
 
-## 📁 Project Structure
+### Deployment
+
+* Nginx web server
+* Static website deployment
+* Docker containerization
+* Nginx reverse proxy → Docker container
+
+---
+
+## Project Structure
 
 ```
 linux-server-hardening/
-│
 ├── ansible/
-│   ├── inventory.ini
-│   ├── setup.yml
-│   └── roles/
-│       ├── base/
-│       ├── ssh/
-│       ├── nginx/
-│       └── app/
-│
 ├── app/
-│   ├── index.html
-│   └── style.css
-│
 └── README.md
 ```
 
 ---
 
-## ▶️ How to Run
-
-### 1. Connect to server
+## How to Run
 
 ```bash
 ssh devadmin@<SERVER_IP>
-```
-
-### 2. Run Ansible playbook
-
-```bash
 ansible-playbook -i inventory.ini setup.yml --ask-become-pass
 ```
 
 ---
 
-## 🧠 Key Concepts Learned
+## Key Concepts
 
-* SSH key-based authentication
-* Linux server hardening practices
-* Firewall configuration (UFW)
-* Brute-force protection using Fail2Ban
-* Infrastructure as Code (IaC)
-* Configuration management with Ansible
-* Role-based automation structure
-
----
-
-## 🎯 Outcome
-
-Successfully built a secure and automated Linux server environment capable of deploying and serving web applications.
+* Linux server hardening
+* SSH authentication
+* Firewall management
+* Ansible automation
+* Docker basics
+* Reverse proxy setup
 
 ---
 
-## 🔗 Reference
+## References
 
-https://roadmap.sh/projects/linux-server-setup  
+https://roadmap.sh/projects/linux-server-setup
 https://roadmap.sh/projects/configuration-management
-
-
