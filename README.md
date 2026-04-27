@@ -73,5 +73,5 @@ ansible-playbook -i inventory.ini setup.yml --ask-become-pass
 
 ## References
 
-https://roadmap.sh/projects/linux-server-setup
+https://roadmap.sh/projects/linux-server-setup  
 https://roadmap.sh/projects/configuration-management
